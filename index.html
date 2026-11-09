@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nueva Mazda CX-5 Híbrida | Kyoto Motors Show</title>
+<meta name="description" content="Estrena tu nueva Mazda CX-5 Híbrida (M Hybrid) en Kyoto Motors Medellín: entrega en 48 horas, matrícula incluida y tasas desde 0,66%. Cotiza por WhatsApp.">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<!-- Vista previa al compartir el enlace (foto real) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mazda-cx5-kyoto.netlify.app/">
+<meta property="og:title" content="Kyoto Motors Show — Estrena tu Mazda CX-5 Híbrida">
+<meta property="og:description" content="Entrega en 48 horas, matrícula incluida y tasas desde 0,66%. Los beneficios del Salón, sin hacer filas.">
+<meta property="og:image" content="https://mazda-cx5-kyoto.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mazda-cx5-kyoto.netlify.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--rojo:#c8102e;--rojo2:#e2283f;--negro:#0b0b0d;--gris:#16171b;--gris2:#22242a;--txt:#f3f3f5;--sub:#a9abb3;--oro:#d8c08a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,system-ui,sans-serif;background:var(--negro);color:var(--txt);overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+/* barra superior */
+.top{position:sticky;top:0;z-index:50;background:rgba(11,11,13,.82);backdrop-filter:blur(10px);border-bottom:1px solid #222}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:10px}
+.brand{font-weight:800;letter-spacing:.14em;font-size:.95rem}
+.brand span{color:var(--rojo2)}
+.top-r{display:flex;gap:8px;align-items:center}
+.reloj{font-size:.72rem;color:var(--sub);text-align:right;line-height:1.2}
+.btn{border:0;cursor:pointer;font:inherit;font-weight:700;border-radius:40px;padding:12px 22px;transition:.25s}
+.btn-r{background:var(--rojo);color:#fff;box-shadow:0 8px 24px rgba(200,16,46,.35)}
+.btn-r:hover{background:var(--rojo2);transform:translateY(-2px)}
+.btn-o{background:transparent;color:#fff;border:1.5px solid #555}
+.btn-o:hover{border-color:#fff}
+.btn-s{padding:8px 14px;font-size:.78rem}
+/* cinta */
+.cinta{background:var(--rojo);overflow:hidden;white-space:nowrap;font-weight:700;font-size:.82rem;letter-spacing:.06em}
+.cinta div{display:inline-block;padding:9px 0;animation:corre 26s linear infinite}
+@keyframes corre{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(hero.jpg) center 70%/cover;animation:zoom 18s ease-in-out infinite alternate}
+@keyframes zoom{from{transform:scale(1.04)}to{transform:scale(1.16)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,13,.2) 0%,rgba(11,11,13,.55) 50%,var(--negro) 96%)}
+.hero-c{position:relative;z-index:2;padding:0 0 56px}
+.kick{display:inline-block;background:rgba(200,16,46,.9);padding:6px 14px;border-radius:30px;font-size:.75rem;font-weight:700;letter-spacing:.12em;margin-bottom:14px;animation:late 2s infinite}
+@keyframes late{50%{box-shadow:0 0 0 10px rgba(200,16,46,0)}0%{box-shadow:0 0 0 0 rgba(200,16,46,.6)}}
+h1{font-size:clamp(2rem,6vw,3.8rem);font-weight:800;line-height:1.05;max-width:760px}
+h1 em{font-style:normal;color:var(--rojo2)}
+.hero p{color:#ddd;margin:14px 0 24px;max-width:600px;line-height:1.6}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+/* beneficios */
+.benef{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-30px;position:relative;z-index:3}
+.b{background:linear-gradient(160deg,var(--gris2),var(--gris));border:1px solid #2c2e35;border-radius:18px;padding:22px 18px;opacity:0;transform:translateY(30px);transition:.7s}
+.b.vis{opacity:1;transform:none}
+.b .n{font-size:2.1rem;font-weight:800;color:var(--rojo2)}
+.b .t{font-weight:700;margin:4px 0}
+.b .d{font-size:.82rem;color:var(--sub);line-height:1.5}
+section{padding:70px 0}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:10px}
+.lead{color:var(--sub);max-width:680px;line-height:1.6;margin-bottom:30px}
+.tag{color:var(--rojo2);font-weight:700;letter-spacing:.14em;font-size:.75rem;margin-bottom:8px;display:block}
+/* galería */
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:200px;gap:12px}
+.gal figure{position:relative;overflow:hidden;border-radius:16px;background:#1a1b20}
+.gal figure:first-child{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.08)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:12px;font-size:.8rem;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+/* versiones */
+.vers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.v{background:var(--gris);border:1.5px solid #2a2c33;border-radius:18px;padding:22px;cursor:pointer;transition:.3s;display:flex;flex-direction:column}
+.v:hover{transform:translateY(-6px);border-color:#555}
+.v.sel{border-color:var(--rojo);box-shadow:0 10px 30px rgba(200,16,46,.25)}
+.v h3{font-size:1.05rem;margin-bottom:4px}
+.v .tr{font-size:.75rem;color:var(--oro);font-weight:700;letter-spacing:.08em}
+.v .p{font-size:1.45rem;font-weight:800;margin:14px 0}
+.v ul{list-style:none;font-size:.8rem;color:var(--sub);line-height:1.5;flex:1}
+.v li{padding:5px 0;border-top:1px solid #25272d}
+.v .btn{margin-top:16px;width:100%}
+.nota{font-size:.75rem;color:#777;margin-top:14px}
+/* ficha */
+.ficha{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.f{background:var(--gris);border-radius:16px;padding:20px;border-left:3px solid var(--rojo)}
+.f .k{font-size:.72rem;color:var(--sub);letter-spacing:.1em;text-transform:uppercase}
+.f .val{font-size:1.4rem;font-weight:800;margin-top:6px}
+.cnt{display:inline-block}
+/* seguridad */
+.seg{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center}
+.seg img{width:100%;border-radius:18px}
+.lista li{list-style:none;padding:12px 0;border-bottom:1px solid #24262c;font-size:.92rem;display:flex;gap:12px}
+.lista li b{color:var(--rojo2);min-width:24px}
+/* simulador */
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:linear-gradient(150deg,#1b1c22,#121317);border:1px solid #2a2c33;border-radius:22px;padding:28px}
+label{display:block;font-size:.8rem;color:var(--sub);margin:14px 0 6px}
+select,input{width:100%;background:#0f1013;border:1px solid #33353d;color:#fff;border-radius:12px;padding:12px;font:inherit}
+input[type=range]{padding:0;accent-color:var(--rojo)}
+.res{background:#0d0e11;border-radius:18px;padding:24px;display:flex;flex-direction:column;justify-content:center}
+.res .cuota{font-size:2.4rem;font-weight:800;color:var(--rojo2);margin:6px 0}
+.res .lin{display:flex;justify-content:space-between;font-size:.85rem;padding:8px 0;border-bottom:1px solid #222}
+/* video */
+.vid{position:relative;border-radius:20px;overflow:hidden;min-height:340px;display:flex;align-items:center;justify-content:center;text-align:center;background:url(flyer.jpg) center/cover}
+.vid::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.vid div{position:relative;padding:20px}
+/* form */
+.form{background:var(--gris);border-radius:22px;padding:28px;border:1px solid #2a2c33}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.ref{background:#0f1013;border:1px dashed var(--oro);border-radius:12px;padding:12px;font-size:.82rem;margin-top:16px;color:var(--oro)}
+/* sedes */
+.sedes{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sede{background:var(--gris);border-radius:16px;padding:22px}
+.sede h3{margin-bottom:6px}
+.sede p{color:var(--sub);font-size:.88rem;margin-bottom:12px}
+footer{padding:40px 0 100px;border-top:1px solid #1f2025;color:#777;font-size:.78rem;line-height:1.7;text-align:center}
+.flot{position:fixed;right:16px;bottom:16px;z-index:60;background:#25d366;color:#05210f;font-weight:800;border-radius:40px;padding:14px 20px;box-shadow:0 10px 30px rgba(0,0,0,.4);text-decoration:none;animation:sube 2.5s ease-in-out infinite}
+@keyframes sube{50%{transform:translateY(-5px)}}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(30px);opacity:0;background:#fff;color:#000;padding:12px 18px;border-radius:12px;font-weight:600;font-size:.85rem;transition:.35s;z-index:70}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.rv{opacity:0;transform:translateY(40px);transition:.8s}
+.rv.vis{opacity:1;transform:none}
+@media(max-width:860px){.benef,.vers{grid-template-columns:1fr 1fr}.ficha{grid-template-columns:1fr 1fr}.seg,.sim,.sedes{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr;grid-auto-rows:160px}.gal figure:first-child{grid-column:span 2}.reloj{display:none}.brand{font-size:.78rem}.hero{min-height:80vh}}
+@media(max-width:520px){.hero-bg{background-size:auto 55%;background-position:center 12%;background-repeat:no-repeat}.benef,.vers,.fg{grid-template-columns:1fr}.ficha{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <div class="brand">KYOTO <span>MOTORS</span> · MAZDA</div>
+  <div class="top-r">
+    <div class="reloj" id="reloj"></div>
+    <button class="btn btn-o btn-s" id="btnLang">EN</button>
+    <button class="btn btn-r btn-s" onclick="irA('cotizar')" data-i="nav_cta">Más información</button>
+  </div>
+</div></header>
+
+<div class="cinta"><div id="cinta"></div></div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-c">
+    <span class="kick" data-i="kick">EL SALÓN YA SE VIVE EN KYOTO MOTORS</span>
+    <h1 data-i="h1">Estrena tu nueva <em>Mazda CX-5 Híbrida</em> sin hacer filas</h1>
+    <p data-i="hero_p">Adelántate a la feria: los mismos beneficios del Salón del Automóvil, desde hoy en nuestras vitrinas de Medellín. Sofisticación japonesa y el respaldo que mereces.</p>
+    <div class="cta">
+      <button class="btn btn-r" onclick="irA('cotizar')" data-i="cta1">Quiero más información</button>
+      <button class="btn btn-o" onclick="irA('versiones')" data-i="cta2">Ver versiones y precios</button>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="benef">
+    <div class="b"><div class="n">48 h</div><div class="t" data-i="b1t">Entrega en 48 horas</div><div class="d" data-i="b1d">Disfruta la experiencia de conducción de inmediato.*</div></div>
+    <div class="b"><div class="n">$0</div><div class="t" data-i="b2t">Matrícula incluida</div><div class="d" data-i="b2d">Te la entregamos lista para rodar.*</div></div>
+    <div class="b"><div class="n">0,66%</div><div class="t" data-i="b3t">Tasas desde</div><div class="d" data-i="b3d">Financiación con tasas preferenciales del Salón.*</div></div>
+    <div class="b"><div class="n">+</div><div class="t" data-i="b4t">Beneficios exclusivos</div><div class="d" data-i="b4d">Los mismos del Salón, con atención prioritaria.*</div></div>
+  </div>
+</div>
+
+<section id="galeria"><div class="wrap rv">
+  <span class="tag" data-i="g_tag">ASÍ ES LA NUEVA CX-5</span>
+  <h2 data-i="g_h">Más grande, más tecnológica, más Mazda</h2>
+  <p class="lead" data-i="g_p">La nueva generación creció 11,4 cm, estrena cabina con pantallas de hasta 15,6" y llega con motor 2.5 M Hybrid que funciona con gasolina corriente.</p>
+  <div class="gal">
+    <figure><img src="https://acnews.blob.core.windows.net/imgnews/large/NAZ_a3757226fad0459ba74e39651edc455d.webp" alt="Nueva Mazda CX-5" loading="lazy" onerror="this.src='flyer.jpg'"><figcaption data-i="c1">Nueva Mazda CX-5 2027</figcaption></figure>
+    <figure><img src="https://acnews.blob.core.windows.net/imgnews/paragraph/NPAZ_6f7656d13d8e46bfa2ad362797823560.webp" alt="Diseño" loading="lazy" onerror="this.src='flyer.jpg'"><figcaption data-i="c2">Diseño Kodo</figcaption></figure>
+    <figure><img src="https://acnews.blob.core.windows.net/imgnews/paragraph/NPAZ_454339601e4e4808bf5346119ee1ad77.webp" alt="Interior" loading="lazy" onerror="this.src='flyer.jpg'"><figcaption data-i="c3">Interior</figcaption></figure>
+    <figure><img src="https://acnews.blob.core.windows.net/imgnews/paragraph/NPAZ_51ee637623b34fb5bd95f6e0d3f826cb.webp" alt="Motor M Hybrid" loading="lazy" onerror="this.src='flyer.jpg'"><figcaption data-i="c4">Motor 2.5 M Hybrid</figcaption></figure>
+    <figure><img src="flyer.jpg" alt="Kyoto Motors Show" loading="lazy"><figcaption>Kyoto Motors Show</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="versiones" style="background:#0e0f12"><div class="wrap rv">
+  <span class="tag" data-i="v_tag">VERSIONES Y PRECIOS</span>
+  <h2 data-i="v_h">Elige tu CX-5 Híbrida</h2>
+  <p class="lead" data-i="v_p">Las cuatro versiones llevan motor eSkyactiv-G 2.5 con sistema M Hybrid de 24 V, caja automática de 6 velocidades y garantía de 5 años sin límite de kilometraje.</p>
+  <div class="vers" id="vers"></div>
+  <p class="nota" data-i="v_nota">Precios de lanzamiento publicados para Colombia (octubre 2026). Confirma el precio vigente, colores y disponibilidad con el asesor. *Aplican términos y condiciones.</p>
+</div></section>
+
+<section id="ficha"><div class="wrap rv">
+  <span class="tag" data-i="f_tag">FICHA TÉCNICA</span>
+  <h2 data-i="f_h">Los números de la nueva CX-5</h2>
+  <div class="ficha">
+    <div class="f"><div class="k" data-i="f1">Potencia</div><div class="val"><span class="cnt" data-to="178">0</span> hp</div></div>
+    <div class="f"><div class="k" data-i="f2">Torque</div><div class="val"><span class="cnt" data-to="242">0</span> Nm</div></div>
+    <div class="f"><div class="k" data-i="f3">Baúl (hasta)</div><div class="val"><span class="cnt" data-to="2019">0</span> L</div></div>
+    <div class="f"><div class="k" data-i="f4">Largo</div><div class="val">4,69 m</div></div>
+    <div class="f"><div class="k" data-i="f5">Distancia entre ejes</div><div class="val">2,81 m</div></div>
+    <div class="f"><div class="k" data-i="f6">Airbags</div><div class="val"><span class="cnt" data-to="7">0</span></div></div>
+  </div>
+</div></section>
+
+<section id="seguridad" style="background:#0e0f12"><div class="wrap seg rv">
+  <img src="https://acnews.blob.core.windows.net/imgnews/paragraph/NPAZ_69d68f862ee74f7b98281a87c603acf7.webp" alt="Seguridad i-Activsense" loading="lazy" onerror="this.src='flyer.jpg'">
+  <div>
+    <span class="tag" data-i="s_tag">SEGURIDAD i-ACTIVSENSE</span>
+    <h2 data-i="s_h">Cuida a los tuyos en cada viaje</h2>
+    <ul class="lista" id="listaSeg"></ul>
+  </div>
+</div></section>
+
+<section id="credito"><div class="wrap rv">
+  <span class="tag" data-i="sim_tag">SIMULA TU CRÉDITO</span>
+  <h2 data-i="sim_h">¿Cuánto pagarías al mes?</h2>
+  <p class="lead" data-i="sim_p">Calcula una cuota de referencia con la tasa del Salón. El valor final depende del estudio de crédito de la entidad financiera.</p>
+  <div class="sim">
+    <div>
+      <label data-i="l_ver">Versión</label><select id="sVer"></select>
+      <label><span data-i="l_ini">Cuota inicial</span>: <b id="iniTxt"></b></label><input type="range" id="sIni" min="10" max="70" step="5" value="30">
+      <label data-i="l_pla">Plazo</label>
+      <select id="sPla"><option>24</option><option>36</option><option>48</option><option selected>60</option><option>72</option></select>
+      <label data-i="l_tasa">Tasa mes vencido (%)</label><input type="number" id="sTasa" value="0.66" step="0.01" min="0">
+    </div>
+    <div class="res">
+      <div style="color:var(--sub);font-size:.85rem" data-i="r_cuota">Cuota mensual aproximada</div>
+      <div class="cuota" id="rCuota">$0</div>
+      <div class="lin"><span data-i="r_pre">Precio</span><b id="rPre"></b></div>
+      <div class="lin"><span data-i="r_ini">Cuota inicial</span><b id="rIni"></b></div>
+      <div class="lin"><span data-i="r_fin">Valor a financiar</span><b id="rFin"></b></div>
+      <button class="btn btn-r" style="margin-top:18px" onclick="irA('cotizar')" data-i="r_btn">Pedir esta simulación al asesor</button>
+      <p class="nota" data-i="r_nota">Simulación de referencia, no es una oferta de crédito. No incluye seguros ni otros cargos.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="video" style="background:#0e0f12"><div class="wrap rv">
+  <div class="vid"><div>
+    <span class="tag" data-i="vi_tag">MÍRALA EN MOVIMIENTO</span>
+    <h2 data-i="vi_h">Videos de la nueva Mazda CX-5</h2>
+    <p class="lead" style="margin:10px auto 20px" data-i="vi_p">Recorrido, interior y prueba de manejo de la nueva generación.</p>
+    <a class="btn btn-r" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=nueva+Mazda+CX-5+2027+mild+hybrid+Colombia" data-i="vi_btn">Ver videos</a>
+  </div></div>
+</div></section>
+
+<section id="cotizar"><div class="wrap rv">
+  <span class="tag" data-i="q_tag">ATENCIÓN PRIORITARIA</span>
+  <h2 data-i="q_h">Asegura tu Mazda CX-5 Híbrida</h2>
+  <p class="lead" data-i="q_p">Oportunidad de tiempo limitado. Déjanos tus datos y un asesor te atiende por WhatsApp con prioridad.</p>
+  <form class="form" id="form">
+    <div class="fg">
+      <div><label data-i="q_nom">Nombre completo</label><input id="qNom" required></div>
+      <div><label data-i="q_cel">Celular</label><input id="qCel" type="tel" required inputmode="tel"></div>
+      <div><label data-i="q_ciu">Ciudad</label><input id="qCiu" value="Medellín"></div>
+      <div><label data-i="l_ver">Versión</label><select id="qVer"></select></div>
+      <div><label data-i="q_pago">Forma de pago</label>
+        <select id="qPago"><option value="credito" data-i="o1">Crédito</option><option value="contado" data-i="o2">Contado</option><option value="retoma" data-i="o3">Retoma de mi carro + crédito</option></select></div>
+      <div><label data-i="q_sede">Vitrina preferida</label>
+        <select id="qSede"><option>Las Vegas — Cra 48 #10-168</option><option>C.C. Viva Envigado — Cra 48 #32B Sur-139</option></select></div>
+    </div>
+    <div class="ref"><span data-i="q_ref">Código de referido</span>: <b id="refTxt"></b></div>
+    <button class="btn btn-r" style="margin-top:20px;width:100%" data-i="q_btn">MÁS INFORMACIÓN por WhatsApp</button>
+  </form>
+</div></section>
+
+<section id="sedes" style="background:#0e0f12"><div class="wrap rv">
+  <span class="tag" data-i="sd_tag">VISÍTANOS</span>
+  <h2 data-i="sd_h">Vitrinas Kyoto Motors en Medellín</h2>
+  <div class="sedes">
+    <div class="sede"><h3>Las Vegas</h3><p>Cra 48 #10-168, Medellín</p><a class="btn btn-o btn-s" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kyoto+Motors+Mazda+Carrera+48+10-168+Medellin" data-i="mapa">Cómo llegar</a></div>
+    <div class="sede"><h3>C.C. Viva Envigado</h3><p>Cra 48 #32B Sur-139, Envigado</p><a class="btn btn-o btn-s" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kyoto+Motors+Mazda+Viva+Envigado" data-i="mapa">Cómo llegar</a></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p data-i="foot1">*Aplican términos y condiciones. Beneficios sujetos a disponibilidad de inventario, aprobación de crédito y vigencia de la campaña Kyoto Motors Show. Imágenes de referencia.</p>
+  <p data-i="foot2">Datos técnicos y precios tomados de la información de lanzamiento de la nueva Mazda CX-5 en Colombia.</p>
+  <p style="margin-top:12px">App hecha por <b>Vibras Positivas HM</b> · Harold Marín · 311 770 0431</p>
+</div></footer>
+
+<a class="flot" href="#cotizar" onclick="irA('cotizar');return false" data-i="flot">MÁS INFORMACIÓN</a>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ===== CONFIGURACIÓN ===== */
+const WA_DESTINO = "573117700431";   // WhatsApp que recibe la cotización (cámbialo por el del asesor de Kyoto si lo acuerdan)
+const REF_DEFAULT = "VPHM-HAROLD";   // código de referido para la comisión
+const TZ = "America/Bogota";
+
+const VERSIONES = [
+ {id:"t42",n:"Touring 4x2",tr:"4x2",p:157850000,es:["Pantalla central 12,9\"","Instrumentos digitales 10,25\"","8 parlantes","CarPlay y Android Auto inalámbricos","Crucero adaptativo Stop & Go"],en:["12.9\" center display","10.25\" digital cluster","8 speakers","Wireless CarPlay & Android Auto","Adaptive cruise Stop & Go"]},
+ {id:"gt42",n:"Grand Touring 4x2",tr:"4x2",p:168450000,es:["Sonido Bose 12 parlantes","Head-up display en el parabrisas","Techo panorámico corredizo","Tapicería vinil-cuero y tela","Rines de 19\""],en:["Bose 12-speaker sound","Windshield head-up display","Panoramic sliding sunroof","Leatherette and cloth seats","19\" wheels"]},
+ {id:"gtawd",n:"Grand Touring AWD",tr:"i-ACTIV AWD",p:177500000,es:["Tracción integral i-Activ AWD","Cámara 360°","Monitoreo del conductor","Alerta de tráfico cruzado delantero","Techo panorámico y Bose"],en:["i-Activ AWD","360° view monitor","Driver monitoring","Front cross-traffic alert","Sunroof and Bose"]},
+ {id:"gtlx",n:"Grand Touring LX AWD",tr:"i-ACTIV AWD",p:187650000,es:["Pantalla central 15,6\"","Cuero y vinil-cuero beis","Luz ambiental de 7 colores","Baúl eléctrico manos libres","Todo lo de Grand Touring AWD"],en:["15.6\" center display","Beige leather upholstery","7-color ambient lighting","Hands-free power liftgate","Everything in GT AWD"]}
+];
+const SEG = {
+ es:["Asistencia de frenado inteligente","Alerta de salida de carril","Control crucero adaptativo con Stop & Go","Monitoreo de punto ciego","Alerta de tráfico cruzado trasero","7 airbags, incluido el de rodilla","Anclajes ISOFIX para sillas infantiles","Garantía de 5 años sin límite de kilometraje"],
+ en:["Smart brake support","Lane departure warning","Adaptive cruise control with Stop & Go","Blind spot monitoring","Rear cross-traffic alert","7 airbags including knee airbag","ISOFIX child seat anchors","5-year unlimited-mileage warranty"]
+};
+const T = {
+ en:{nav_cta:"More info",kick:"THE AUTO SHOW IS NOW AT KYOTO MOTORS",h1:"Drive home your new <em>Mazda CX-5 Hybrid</em> with no lines",hero_p:"Beat the fair: the same Auto Show benefits, starting today at our Medellín showrooms. Japanese sophistication with the backing you deserve.",cta1:"I want more info",cta2:"See trims and prices",
+ b1t:"Delivery in 48 hours",b1d:"Enjoy the drive right away.*",b2t:"Registration included",b2d:"Delivered ready to roll.*",b3t:"Rates from",b3d:"Preferential Auto Show financing.*",b4t:"Exclusive benefits",b4d:"Same as the Show, with priority service.*",
+ g_tag:"MEET THE NEW CX-5",g_h:"Bigger, smarter, more Mazda",g_p:"The new generation is 11.4 cm longer, has a new cabin with screens up to 15.6\" and a 2.5 M Hybrid engine that runs on regular gasoline.",c1:"All-new Mazda CX-5 2027",c2:"Kodo design",c3:"Interior",c4:"2.5 M Hybrid engine",
+ v_tag:"TRIMS AND PRICES",v_h:"Choose your CX-5 Hybrid",v_p:"All four trims share the eSkyactiv-G 2.5 engine with 24V M Hybrid system, 6-speed automatic and a 5-year unlimited-mileage warranty.",v_nota:"Launch prices published for Colombia (October 2026). Confirm current price, colors and availability with the advisor. *Terms and conditions apply.",
+ f_tag:"SPECS",f_h:"The new CX-5 by the numbers",f1:"Power",f2:"Torque",f3:"Cargo (up to)",f4:"Length",f5:"Wheelbase",f6:"Airbags",
+ s_tag:"i-ACTIVSENSE SAFETY",s_h:"Protect your loved ones on every trip",
+ sim_tag:"LOAN SIMULATOR",sim_h:"What would your monthly payment be?",sim_p:"Estimate a reference payment with the Show rate. Final terms depend on the lender's credit review.",l_ver:"Trim",l_ini:"Down payment",l_pla:"Term (months)",l_tasa:"Monthly rate (%)",r_cuota:"Estimated monthly payment",r_pre:"Price",r_ini:"Down payment",r_fin:"Amount financed",r_btn:"Send this simulation to the advisor",r_nota:"Reference estimate, not a credit offer. Insurance and other charges not included.",
+ vi_tag:"SEE IT IN MOTION",vi_h:"New Mazda CX-5 videos",vi_p:"Walkaround, interior and test drive of the new generation.",vi_btn:"Watch videos",
+ q_tag:"PRIORITY SERVICE",q_h:"Secure your Mazda CX-5 Hybrid",q_p:"Limited-time opportunity. Leave your details and an advisor will reach you on WhatsApp with priority.",q_nom:"Full name",q_cel:"Mobile",q_ciu:"City",q_pago:"Payment",o1:"Financing",o2:"Cash",o3:"Trade-in + financing",q_sede:"Preferred showroom",q_ref:"Referral code",q_btn:"MORE INFO via WhatsApp",
+ sd_tag:"VISIT US",sd_h:"Kyoto Motors showrooms in Medellín",mapa:"Directions",foot1:"*Terms and conditions apply. Benefits subject to stock, credit approval and Kyoto Motors Show campaign dates. Reference images.",foot2:"Specs and prices from the new Mazda CX-5 Colombia launch information.",flot:"MORE INFO"}
+};
+const CINTA = {es:"KYOTO MOTORS SHOW  ·  ENTREGA EN 48 HORAS  ·  MATRÍCULA INCLUIDA  ·  TASAS DESDE 0,66%  ·  BENEFICIOS EXCLUSIVOS  ·  SIN HACER FILAS  ·  ",en:"KYOTO MOTORS SHOW  ·  48-HOUR DELIVERY  ·  REGISTRATION INCLUDED  ·  RATES FROM 0.66%  ·  EXCLUSIVE BENEFITS  ·  NO LINES  ·  "};
+
+/* ===== IDIOMA ===== */
+let lang = localStorage.getItem("cx5lang")||"es";
+const ES = {};
+document.querySelectorAll("[data-i]").forEach(el=>{ if(!(el.dataset.i in ES)) ES[el.dataset.i]=el.innerHTML; });
+function aplicarIdioma(){
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-i]").forEach(el=>{const k=el.dataset.i; el.innerHTML = lang==="en" && T.en[k] ? T.en[k] : ES[k];});
+  document.getElementById("btnLang").textContent = lang==="es"?"EN":"ES";
+  document.getElementById("cinta").textContent = CINTA[lang].repeat(4);
+  pintarVersiones(); pintarSeg(); calcular();
+}
+document.getElementById("btnLang").onclick=()=>{lang=lang==="es"?"en":"es";localStorage.setItem("cx5lang",lang);aplicarIdioma();};
+
+/* ===== UTIL ===== */
+const cop = n => "$" + Math.round(n).toLocaleString("es-CO");
+function irA(id){document.getElementById(id).scrollIntoView({behavior:"smooth"});}
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),2600);}
+let selVer = "gt42";
+
+/* ===== VERSIONES ===== */
+function pintarVersiones(){
+  const c=document.getElementById("vers"); c.innerHTML="";
+  VERSIONES.forEach(v=>{
+    const d=document.createElement("div"); d.className="v"+(v.id===selVer?" sel":"");
+    d.innerHTML=`<div class="tr">${v.tr}</div><h3>${v.n}</h3><div class="p">${cop(v.p)}</div><ul>${v[lang].map(x=>`<li>${x}</li>`).join("")}</ul><button class="btn btn-r btn-s">${lang==="es"?"Cotizar esta":"Quote this one"}</button>`;
+    d.onclick=()=>{selVer=v.id;sincronizar();pintarVersiones();};
+    d.querySelector("button").onclick=e=>{e.stopPropagation();selVer=v.id;sincronizar();pintarVersiones();irA("cotizar");};
+    c.appendChild(d);
+  });
+  ["sVer","qVer"].forEach(id=>{const s=document.getElementById(id);s.innerHTML=VERSIONES.map(v=>`<option value="${v.id}">${v.n} — ${cop(v.p)}</option>`).join("");s.value=selVer;});
+}
+function sincronizar(){document.getElementById("sVer").value=selVer;document.getElementById("qVer").value=selVer;calcular();}
+document.getElementById("sVer").onchange=e=>{selVer=e.target.value;sincronizar();pintarVersiones();};
+document.getElementById("qVer").onchange=e=>{selVer=e.target.value;sincronizar();pintarVersiones();};
+function pintarSeg(){document.getElementById("listaSeg").innerHTML=SEG[lang].map((s,i)=>`<li><b>${String(i+1).padStart(2,"0")}</b>${s}</li>`).join("");}
+
+/* ===== SIMULADOR ===== */
+let sim={};
+function calcular(){
+  const v=VERSIONES.find(x=>x.id===selVer);
+  const ini=+document.getElementById("sIni").value, n=+document.getElementById("sPla").value, i=(+document.getElementById("sTasa").value||0)/100;
+  const cIni=v.p*ini/100, fin=v.p-cIni;
+  const cuota = i>0 ? fin*i/(1-Math.pow(1+i,-n)) : fin/n;
+  document.getElementById("iniTxt").textContent=ini+"%";
+  document.getElementById("rPre").textContent=cop(v.p);
+  document.getElementById("rIni").textContent=cop(cIni);
+  document.getElementById("rFin").textContent=cop(fin);
+  document.getElementById("rCuota").textContent=cop(cuota);
+  sim={ver:v.n,ini,n,tasa:(i*100).toFixed(2),cuota};
+}
+["sIni","sPla","sTasa"].forEach(id=>document.getElementById(id).addEventListener("input",calcular));
+
+/* ===== REFERIDO ===== */
+const qs=new URLSearchParams(location.search);
+let REF = qs.get("ref") || localStorage.getItem("cx5ref") || REF_DEFAULT;
+localStorage.setItem("cx5ref",REF);
+document.getElementById("refTxt").textContent=REF;
+
+/* ===== HORA COLOMBIA ===== */
+function horaCO(){return new Date().toLocaleString(lang==="es"?"es-CO":"en-US",{timeZone:TZ,dateStyle:"medium",timeStyle:"short"});}
+function tick(){document.getElementById("reloj").innerHTML=(lang==="es"?"Hora Colombia":"Colombia time")+"<br><b>"+horaCO()+"</b>";}
+setInterval(tick,30000);
+
+/* ===== WHATSAPP ===== */
+document.getElementById("form").onsubmit=e=>{
+  e.preventDefault();
+  const v=VERSIONES.find(x=>x.id===document.getElementById("qVer").value);
+  const pago=document.getElementById("qPago").selectedOptions[0].textContent;
+  const msg=[
+    "MÁS INFORMACIÓN — Kyoto Motors Show",
+    "Mazda CX-5 Híbrida: "+v.n+" ("+cop(v.p)+")",
+    "",
+    "Nombre: "+document.getElementById("qNom").value,
+    "Celular: "+document.getElementById("qCel").value,
+    "Ciudad: "+document.getElementById("qCiu").value,
+    "Pago: "+pago,
+    "Vitrina: "+document.getElementById("qSede").value,
+    sim.ver===v.n ? "Simulación: inicial "+sim.ini+"%, "+sim.n+" meses, tasa "+sim.tasa+"% MV, cuota aprox. "+cop(sim.cuota) : "",
+    "",
+    "Código de referido: "+REF,
+    "Fecha (hora Colombia): "+new Date().toLocaleString("es-CO",{timeZone:TZ}),
+    "Enviado desde la app de Vibras Positivas HM"
+  ].filter((l,i,a)=>!(l===""&&a[i-1]==="")).join("\n");
+  window.open("https://wa.me/"+WA_DESTINO+"?text="+encodeURIComponent(msg),"_blank");
+  toast(lang==="es"?"Abriendo WhatsApp…":"Opening WhatsApp…");
+};
+
+/* ===== ANIMACIONES ===== */
+const io=new IntersectionObserver(es=>es.forEach(en=>{
+  if(!en.isIntersecting)return; en.target.classList.add("vis");
+  en.target.querySelectorAll(".cnt").forEach(c=>{
+    if(c.dataset.done)return; c.dataset.done=1; const to=+c.dataset.to; let t0=null;
+    const step=ts=>{t0=t0||ts;const p=Math.min((ts-t0)/1400,1);c.textContent=Math.round(to*(1-Math.pow(1-p,3))).toLocaleString("es-CO");if(p<1)requestAnimationFrame(step);};
+    requestAnimationFrame(step);
+  });
+  io.unobserve(en.target);
+}),{threshold:.15});
+document.querySelectorAll(".rv,.b").forEach((el,i)=>{el.style.transitionDelay=(el.classList.contains("b")?i*0.12:0)+"s";io.observe(el);});
+
+aplicarIdioma(); tick();
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>
